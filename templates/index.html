@@ -1,0 +1,18 @@
+^tmp_head^
+    <div class="hero" ng-if="hero_image">
+        <img class="hero_bg" ng-src="{{hero_image}}"/>
+        </div>
+    </div>
+    <div ng-class="{container: true, standalone: !hero_image}">
+        <div class="row">
+            <div id="articles" ng-class="{'col-lg-12': sideNavItems, 'col-sm-12': sideNavItems, 'col-sm-12': !sideNavItems}"> 
+                ^articles^
+            </div>
+            <div ng-class="{'col-sm-12': sideNavItems, 'col-sm-12': !sideNavItems}">
+            </div>
+            <div class="spacer"></div>
+        </div>
+    </div>
+^infinite_scroll^
+^angular^
+^tmp_footer_no_cp^
